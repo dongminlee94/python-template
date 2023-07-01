@@ -24,5 +24,5 @@ format:
 	poetry run black .
 
 lint:
-	poetry run pytype src
+	poetry run mypy src
 	poetry run ruff src --fix
