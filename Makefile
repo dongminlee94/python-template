@@ -5,7 +5,7 @@ init:
 	pip install -U pip
 	pip install pdm
 	pdm install
-	pre-commit install
+	pdm run pre-commit install
 
 #######################
 #   static analysis   #
@@ -13,8 +13,8 @@ init:
 check: format lint
 
 format:
-	black .
+	pdm run black .
 
 lint:
-	mypy src
-	ruff src --fix
+	pdm run mypy src
+	pdm run ruff src --fix
