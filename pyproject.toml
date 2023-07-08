@@ -2,9 +2,7 @@
 name = "python-template"
 version = "0.0.0"
 description = "A python template"
-authors = [
-    {name = "dongminlee94", email = "kid33629@gmail.com"},
-]
+authors = [{name = "dongminlee94", email = "kid33629@gmail.com"}]
 readme = "README.md"
 
 requires-python = ">=3.10,<3.11"
