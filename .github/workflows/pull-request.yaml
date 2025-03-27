@@ -1,0 +1,25 @@
+name: "[Automation] Pull Request"
+
+on:
+  pull_request:
+    types: [opened, synchronize, edited, reopened, closed]
+
+jobs:
+  size-label:
+    runs-on: ubuntu-latest
+    steps:
+      - name: size-label
+        uses: pascalgn/size-label-action@v0.5.5
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          sizes: >
+            {
+              "0": "XS",
+              "8": "S",
+              "40": "M",
+              "110": "L",
+              "400": "XL",
+              "1000": "XXL",
+              "3000": "XXXL"
+            }
