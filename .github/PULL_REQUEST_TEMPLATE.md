@@ -1,11 +1,11 @@
 ## Changes?
-<!-- 이 PR 로 인해서 무엇이 변경되었는지 작성해주세요 -->
+<!-- Describe what changes were made in this PR. -->
 
 ## Test?
-<!-- 어떻게 테스트했는지, 어떻게 reproduce 할 수 있는지 간단하게 작성해주세요 -->
+<!-- Briefly explain how the changes were tested or how they can be reproduced. -->
 
 ## Related Issues?
-<!-- 관련된 이슈가 있다면 #xx 로 이슈 번호를 작성해주세요 -->
+<!-- If there are related issues, mention them with #issue_number. -->
 
 ## Anything Else? (Optional)
-<!-- 스크린샷, 환경 정보, 주의사항 등 필요한 추가정보가 있다면 작성해주세요. -->
+<!-- Add any extra information such as screenshots, environment details, or notes. -->
