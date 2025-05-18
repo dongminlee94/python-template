@@ -19,8 +19,8 @@ dependencies = []
 dev = [
     "isort>=6.0.1",
     "ruff>=0.9.10",
-    "pyright>=1.1.396",
     "pre-commit>=4.1.0",
+    "pyrefly>=0.15.2",
 ]
 
 [tool.pdm]
@@ -119,7 +119,13 @@ select = [
     "PL",       # pylint
     "UP",       # pyupgrade
 ]
-ignore = ["D104", "D203", "D212", "COM812"]
+ignore = [
+    "D104",
+    "D203",
+    "D212",
+    "COM812",
+    "PERF203",
+]
 
 # Allow fix for all enabled rules (when `--fix`) is provided.
 fixable = ["ALL"]
@@ -129,14 +135,9 @@ unfixable = []
 max-args = 10
 max-statements = 50
 
-[tool.pyright]
-include = ["src"]
-exclude = []
-ignore = []
-defineConstant = {}
-stubPath = ""
+[tool.pyrefly]
+project_includes = ["src"]
+project_excludes = []
+search_path = ["src"]
 
-reportMissingImports = "error"
-reportMissingTypeStubs = false
-
-pythonVersion = "3.10"
+python_version = "3.10"
