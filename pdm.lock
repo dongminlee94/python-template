@@ -5,7 +5,7 @@
 groups = ["default", "dev"]
 strategy = ["inherit_metadata"]
 lock_version = "4.5.0"
-content_hash = "sha256:da0fafaf9a38e02ea7ce361994df4684135437d0227ab110685b16749d4edc47"
+content_hash = "sha256:549a8801502f3c6ebf3a7e198948036b4daa5702e9b6271df0ecb7e02daacfd7"
 
 [[metadata.targets]]
 requires_python = ">=3.10"
@@ -105,18 +105,20 @@ files = [
 ]
 
 [[package]]
-name = "pyright"
-version = "1.1.398"
-requires_python = ">=3.7"
-summary = "Command line wrapper for pyright"
+name = "pyrefly"
+version = "0.15.2"
+requires_python = ">=3.8"
+summary = "A faster Python type checker written in Rust"
 groups = ["dev"]
-dependencies = [
-    "nodeenv>=1.6.0",
-    "typing-extensions>=4.1",
-]
 files = [
-    {file = "pyright-1.1.398-py3-none-any.whl", hash = "sha256:0a70bfd007d9ea7de1cf9740e1ad1a40a122592cfe22a3f6791b06162ad08753"},
-    {file = "pyright-1.1.398.tar.gz", hash = "sha256:357a13edd9be8082dc73be51190913e475fa41a6efb6ec0d4b7aab3bc11638d8"},
+    {file = "pyrefly-0.15.2-py3-none-macosx_10_12_x86_64.whl", hash = "sha256:70d96f91a2c0c57cc44f43a8e7a9fb322b5e4b2ec16cfa6c09e6f598d6c8c673"},
+    {file = "pyrefly-0.15.2-py3-none-macosx_11_0_arm64.whl", hash = "sha256:6c28fba099e355d7873ac1a4dee90ec4eba6be008ceda9b2f38d7e10c4d613ed"},
+    {file = "pyrefly-0.15.2-py3-none-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:93e597b970a703fc34dac518d995bba2021d89ca353afef11cafebe376d6656c"},
+    {file = "pyrefly-0.15.2-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:d67df8654de97b5055b5bb8e48c3118da9e4e272aa3c2fe747d1b46e98c6096b"},
+    {file = "pyrefly-0.15.2-py3-none-win32.whl", hash = "sha256:ea5387dcddd77c2c24930aa27bbca0fe63e6bfe83b233772255c73a01e6891e1"},
+    {file = "pyrefly-0.15.2-py3-none-win_amd64.whl", hash = "sha256:57a3a39d4bf934c010a13c32d9b97602b002d63aa0b3b3c4b341f315b06ba467"},
+    {file = "pyrefly-0.15.2-py3-none-win_arm64.whl", hash = "sha256:b6c58f8a5573284da82855febcf2f6e40c18d04ecf678aeee3d0ef66fe7ca313"},
+    {file = "pyrefly-0.15.2.tar.gz", hash = "sha256:2cefa00a0766dc446ea860c365a3710a19101d168960cd372b3dd6b8fb9aa694"},
 ]
 
 [[package]]
@@ -190,17 +192,6 @@ files = [
     {file = "ruff-0.11.2-py3-none-win_amd64.whl", hash = "sha256:3170150172a8f994136c0c66f494edf199a0bbea7a409f649e4bc8f4d7084080"},
     {file = "ruff-0.11.2-py3-none-win_arm64.whl", hash = "sha256:52933095158ff328f4c77af3d74f0379e34fd52f175144cefc1b192e7ccd32b4"},
     {file = "ruff-0.11.2.tar.gz", hash = "sha256:ec47591497d5a1050175bdf4e1a4e6272cddff7da88a2ad595e1e326041d8d94"},
-]
-
-[[package]]
-name = "typing-extensions"
-version = "4.13.0"
-requires_python = ">=3.8"
-summary = "Backported and Experimental Type Hints for Python 3.8+"
-groups = ["dev"]
-files = [
-    {file = "typing_extensions-4.13.0-py3-none-any.whl", hash = "sha256:c8dd92cc0d6425a97c18fbb9d1954e5ff92c1ca881a309c45f06ebc0b79058e5"},
-    {file = "typing_extensions-4.13.0.tar.gz", hash = "sha256:0a4ac55a5820789d87e297727d229866c9650f6521b64206413c4fbada24d95b"},
 ]
 
 [[package]]

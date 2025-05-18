@@ -19,5 +19,5 @@ format:
 	pdm run ruff format src
 
 lint:
-	pdm run pyright src
+	pdm run pyrefly check
 	pdm run ruff check src --fix --unsafe-fixes
